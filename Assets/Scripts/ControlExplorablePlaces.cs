@@ -15,7 +15,7 @@ public class ControlExplorablePlaces : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(spawnObject());
+        //StartCoroutine(spawnObject());
     }
 
     // Update is called once per frame
