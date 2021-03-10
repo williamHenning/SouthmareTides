@@ -6,9 +6,8 @@ using UnityEngine.SceneManagement;
 public class boatMovement : MonoBehaviour
 {
 
-    private float m_moveSpeed = 0.0f;
-    [SerializeField] private float m_moveSpeedDelta = 2.0f;
-    [SerializeField] private float m_turnSpeed = 100.0f;
+    [SerializeField] private float m_moveSpeed = 2;
+    [SerializeField] private float m_turnSpeed = 200;
 
     private float m_currentV = 0;
     private float m_currentH = 0;
@@ -19,22 +18,33 @@ public class boatMovement : MonoBehaviour
     private void Update()
     {
         DirectUpdate();
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
     }
 
     private void DirectUpdate()
     {
-        float velocity = Input.GetAxis("Vertical");
-        float rotation = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxis("Horizontal");
 
+        Transform camera = Camera.main.transform;
 
-        m_moveSpeed += velocity * m_moveSpeedDelta * Time.deltaTime;
-        //Currently no rotating of the ship
-        //transform.rotation = Quaternion.LookRotation(m_currentDirection);
+        m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
+        m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
 
-        transform.Rotate(new Vector3(0, rotation * Time.deltaTime * m_turnSpeed, 0));
-        transform.position += transform.forward * m_moveSpeed;
+        Vector3 direction = transform.forward * m_currentV + camera.right * m_currentH;
+
+        float directionLength = direction.magnitude;
+        
+        direction.y = 0;
+        direction = direction.normalized * directionLength;
+
+        if (direction != Vector3.zero)
+        {
+            m_currentDirection = Vector3.Slerp(m_currentDirection, direction, Time.deltaTime * m_interpolation);
+            
+            //Currently no rotating of the ship
+            //transform.rotation = Quaternion.LookRotation(m_currentDirection);
+            transform.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
