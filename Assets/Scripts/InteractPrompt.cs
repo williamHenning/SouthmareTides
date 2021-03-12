@@ -6,6 +6,7 @@ using System;
 
 public class InteractPrompt : MonoBehaviour
 {
+    public List<GameObject> interactablesPosition; //objects the player can interact with (actual position)
     public List<GameObject> interactables; //objects the player can interact with
     public GameObject interactPrompt; //the interact ui prompt
 
@@ -46,7 +47,7 @@ public class InteractPrompt : MonoBehaviour
         else {
                     for (int i = 0; i < interactables.Count; i++)
                     {
-                        if (Vector3.Distance(interactables[i].transform.position, this.transform.position) < 5)
+                        if (Vector3.Distance(interactablesPosition[i].transform.position, this.transform.position) < 5)
                         {
                             if (interactables[i].transform.tag == "Treasure")
                             {
@@ -108,5 +109,8 @@ public class InteractPrompt : MonoBehaviour
     {
         Destroy(interactables[currentInteractable]);
         interactables.RemoveAt(currentInteractable);
+
+        Destroy(interactablesPosition[currentInteractable]);
+        interactablesPosition.RemoveAt(currentInteractable);   
     }
 }

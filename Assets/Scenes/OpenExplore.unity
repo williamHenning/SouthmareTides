@@ -237,7 +237,7 @@ MonoBehaviour:
   explorablePlaces:
   - {fileID: 2712688459779361802, guid: 84e01de0f4dd7b44987bb618c04d0fc5, type: 3}
   - {fileID: 1404470495662711682, guid: 872cc9ddbd94e734281f1489a00aea46, type: 3}
-  - {fileID: 7307289992932849528, guid: 0fc97822c6750d748a592669fe4ad537, type: 3}
+  - {fileID: 6470623944342428602, guid: ef4234ff493bf6845917da969999a528, type: 3}
   createdPlaces: []
   moveSpeed: 50
 --- !u!1 &510178713
