@@ -64,9 +64,8 @@ public class SimpleSampleCharacterControl : MonoBehaviour
         bool validSurfaceNormal = false;
         for (int i = 0; i < contactPoints.Length; i++)
         {
-            if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.9f)
+            if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.5f)
             {
-                Debug.Log(contactPoints[i].normal);
                 validSurfaceNormal = true; break;
             }
         }
@@ -141,7 +140,7 @@ public class SimpleSampleCharacterControl : MonoBehaviour
         m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
         m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
 
-        Vector3 direction = transform.forward * m_currentV + transform.right * m_currentH;
+        Vector3 direction = camera.forward * m_currentV + camera.right * m_currentH;
 
         float directionLength = direction.magnitude;
         direction.y = 0;
