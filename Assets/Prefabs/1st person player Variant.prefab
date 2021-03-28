@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a372e5babda4d3c4b9adc651092f9965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactablesPosition: []
   interactables:
   - {fileID: 0}
   - {fileID: 0}
@@ -80,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1711394742}
-  gravity: -9.81
+  gravity: -20
   speed: 10
   jumpForce: 3
   groundCheck: {fileID: 952142576}
@@ -109,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 6647307370432492788, guid: ea9849f935afe504a9e1fd5917a04d6a,
         type: 3}
       propertyPath: m_Name
-      value: 1st person player
+      value: 1st person player Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8651858814906332697, guid: ea9849f935afe504a9e1fd5917a04d6a,
         type: 3}
