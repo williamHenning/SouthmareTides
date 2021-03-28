@@ -758,6 +758,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a372e5babda4d3c4b9adc651092f9965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactablesPosition:
+  - {fileID: 204094823}
+  - {fileID: 1206367461}
   interactables:
   - {fileID: 204094823}
   - {fileID: 1206367461}

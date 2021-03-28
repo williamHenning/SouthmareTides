@@ -1473,6 +1473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2624743473498391301}
+  - component: {fileID: 1507485730500453560}
   m_Layer: 0
   m_Name: Other_ship_Explore
   m_TagString: Ship_Explore
@@ -1489,7 +1490,7 @@ Transform:
   m_GameObject: {fileID: 2624743473498169125}
   m_LocalRotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 528, y: 31.879673, z: -99.17621}
-  m_LocalScale: {x: 2.54, y: 2.54, z: 2.54}
+  m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_Children:
   - {fileID: 2624743473498391381}
   - {fileID: 2624743473498391383}
@@ -1539,6 +1540,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1507485730500453560
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624743473498169125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.439331, y: 24.503706, z: 43.26985}
+  m_Center: {x: -0.09968398, y: 11.751857, z: 6.0233836}
 --- !u!1 &2624743473498169127
 GameObject:
   m_ObjectHideFlags: 0

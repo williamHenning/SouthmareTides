@@ -12,6 +12,11 @@ TagManager:
   - PauseScreen
   - Treasure
   - ReturnHome
+  - HomeIsland
+  - WeaponIsland
+  - ArmourIsland
+  - BritishTreasureIsland
+  - UpgradeShipIsland
   layers:
   - Default
   - TransparentFX

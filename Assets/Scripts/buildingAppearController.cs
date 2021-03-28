@@ -48,6 +48,7 @@ public class buildingAppearController : MonoBehaviour
         //something else
         else
         {
+            Debug.Log("The value in playerpref 0: "+buildingsOwned[0]);
             Debug.Log("Something is wrong with storehouse");
         }
 
@@ -68,7 +69,8 @@ public class buildingAppearController : MonoBehaviour
         //something else
         else
         {
-            Debug.Log("Something is wrong with storehouse");
+            Debug.Log("The value in playerpref 1: " + buildingsOwned[1]);
+            Debug.Log("Something is wrong with blacksmith");
         }
 
         //if no trader
@@ -88,7 +90,8 @@ public class buildingAppearController : MonoBehaviour
         //something else
         else
         {
-            Debug.Log("Something is wrong with storehouse");
+            Debug.Log("The value in playerpref 2: " + buildingsOwned[2]);
+            Debug.Log("Something is wrong with trader");
         }
 
     }
