@@ -1565,6 +1565,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206367461}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1208857412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 110828, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2030234790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1233340574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2015,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactablesPosition.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactables.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactPrompt
+      value: 
+      objectReference: {fileID: 697427920}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactablesPosition.Array.data[0]
+      value: 
+      objectReference: {fileID: 1208857412}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactables.Array.data[0]
+      value: 
+      objectReference: {fileID: 1208857412}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactablesPosition.Array.data[1]
+      value: 
+      objectReference: {fileID: 1206367461}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactables.Array.data[1]
+      value: 
+      objectReference: {fileID: 1206367461}
     - target: {fileID: 2051370307428669002, guid: 9efd562b88b35334199256af6385692c,
         type: 3}
       propertyPath: m_LocalPosition.x
