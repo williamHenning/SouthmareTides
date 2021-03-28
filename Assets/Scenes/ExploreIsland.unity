@@ -727,6 +727,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 516090253}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &547409242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1544840924572020234, guid: ea9849f935afe504a9e1fd5917a04d6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1546838596512336645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &547409248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547409242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a372e5babda4d3c4b9adc651092f9965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactablesPosition:
+  - {fileID: 204094823}
+  - {fileID: 1206367461}
+  interactables:
+  - {fileID: 204094823}
+  - {fileID: 1206367461}
+  interactPrompt: {fileID: 697427920}
+  minGold: 50
+  maxGold: 200
 --- !u!1 &548562711
 GameObject:
   m_ObjectHideFlags: 0

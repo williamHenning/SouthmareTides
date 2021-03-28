@@ -63,9 +63,38 @@ public class boatMovement : MonoBehaviour
             //hit a borderwall
         }
 
+        //Check if hit home island
+        else if (collision.collider.tag == "HomeIsland")
+        {
+            SceneManager.LoadScene("Island_1_Home");
+        }
+
+        //Check if hit weapon upgrade island
+        else if (collision.collider.tag == "WeaponIsland")
+        {
+            SceneManager.LoadScene("ExploreWeaponUpgradeIsland"); 
+        }
+
+        //Check if hit armour upgrade island
+        else if (collision.collider.tag == "ArmourIsland")
+        {
+            SceneManager.LoadScene("ExploreArmourUpgradeIsland");
+        }
+
+        //Check if hit ship upgrade island
+        else if (collision.collider.tag == "UpgradeShipIsland")
+        {
+            SceneManager.LoadScene("ExploreShipUpgradeIsland");
+        }
+
+        //Check if hit british colony tressure place island
+        else if (collision.collider.tag == "BritishTreasureIsland")
+        {
+            SceneManager.LoadScene("ExploreBritishTreasureIsland");
+        }
         else
         {
-            Debug.Log("The other collider, tag: "+collision.collider.tag);
+            Debug.Log("The other collider, tag: " + collision.collider.tag);
             Debug.Log("The other collider, transform: " + collision.collider.transform);
         }
     }

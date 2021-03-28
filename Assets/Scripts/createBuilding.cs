@@ -38,6 +38,7 @@ public class createBuilding : MonoBehaviour
         {
             buildingsOwned = PlayerPrefs.GetString("buildings");
         }
+        Debug.Log("playerpref for \"buildings\" "+buildingsOwned);
     }
 
     public void create(int buildingNo)
@@ -88,7 +89,9 @@ public class createBuilding : MonoBehaviour
             }
             else if (buildingNo == 2)
             {
-                newBuildingsOwned += buildingsOwned[0] + buildingsOwned[1] + "1";
+                Debug.Log("Creating trade post: BuildingsOwned[0] = " + buildingsOwned[0]+ " BuildingsOwned[1] = " + buildingsOwned[1]);
+                Debug.Log(buildingsOwned);
+                newBuildingsOwned = ReplaceAtIndex(2, '1', buildingsOwned);
             }
             else
             {
@@ -98,11 +101,20 @@ public class createBuilding : MonoBehaviour
             PlayerPrefs.SetString("buildings", newBuildingsOwned);
             PlayerPrefs.Save();
 
+            Debug.Log(PlayerPrefs.GetString("buildings"));
+
         }
         //If they don't have enough money
         else
         {
             //Let them know (WIP)
         }
+    }
+
+    static string ReplaceAtIndex(int i, char value, string word)
+    {
+        char[] letters = word.ToCharArray();
+        letters[i] = value;
+        return string.Join("", letters);
     }
 }
