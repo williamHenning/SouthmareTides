@@ -5,19 +5,24 @@ using System.Collections;
 public class MouseLook : MonoBehaviour {
 
 	public float mouseSensitivity = 100f;
+	public GameObject gun;
 	public Transform playerBody;
 	float xRotation = 0f;
-	
+	float yRotation = 0f;
 	void Update ()
 	{
 		float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
 		float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-		xRotation -= mouseY;
+		yRotation -= mouseY;
 		//makes it so you can only look straight up or straight down
-		xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+		yRotation = Mathf.Clamp(yRotation, -90f, 90f);
 
-		transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+		transform.localRotation = Quaternion.Euler(yRotation, 0f, 0f);
+
+		Debug.Log(gun.transform.rotation);
+		gun.transform.RotateAround(transform.position, transform.right, -mouseY * 0.5f);
+        
 		playerBody.Rotate(Vector3.up * mouseX);
 	}
 	
