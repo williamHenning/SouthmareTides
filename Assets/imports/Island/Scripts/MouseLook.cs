@@ -5,7 +5,8 @@ using System.Collections;
 public class MouseLook : MonoBehaviour {
 
 	public float mouseSensitivity = 100f;
-	public GameObject gun;
+	[SerializeField]
+	private GameObject gun;
 	public Transform playerBody;
 	float xRotation = 0f;
 	float yRotation = 0f;
@@ -19,9 +20,6 @@ public class MouseLook : MonoBehaviour {
 		yRotation = Mathf.Clamp(yRotation, -90f, 90f);
 
 		transform.localRotation = Quaternion.Euler(yRotation, 0f, 0f);
-
-		Debug.Log(gun.transform.rotation);
-		gun.transform.RotateAround(transform.position, transform.right, -mouseY * 0.5f);
         
 		playerBody.Rotate(Vector3.up * mouseX);
 	}

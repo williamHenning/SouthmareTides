@@ -2427,6 +2427,33 @@ PrefabInstance:
       propertyPath: interactPrompt
       value: 
       objectReference: {fileID: 1103215810}
+    - target: {fileID: 18908080060596081, guid: 9efd562b88b35334199256af6385692c,
+        type: 3}
+      propertyPath: ejectPower
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 18908080060596081, guid: 9efd562b88b35334199256af6385692c,
+        type: 3}
+      propertyPath: shotPower
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 18908080060596081, guid: 9efd562b88b35334199256af6385692c,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1122964723992546, guid: 674adf642abf5614aae2995443c8250f,
+        type: 3}
+    - target: {fileID: 1820031076800034112, guid: 9efd562b88b35334199256af6385692c,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8169364057099317167, guid: 3a201370bda74f0489149ffae236ea63,
+        type: 3}
+    - target: {fileID: 1820031076800034112, guid: 9efd562b88b35334199256af6385692c,
+        type: 3}
+      propertyPath: shotPower
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 2051370307428669002, guid: 9efd562b88b35334199256af6385692c,
         type: 3}
       propertyPath: m_LocalPosition.y
