@@ -24,6 +24,10 @@ public class BulletController : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    private void FixedUpdate()
+    {
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("ally") || collision.gameObject.CompareTag("player"))

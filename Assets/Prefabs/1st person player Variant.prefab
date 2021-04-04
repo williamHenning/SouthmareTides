@@ -287,12 +287,12 @@ PrefabInstance:
         type: 3}
       propertyPath: bulletPrefab
       value: 
-      objectReference: {fileID: 6804990658058999119, guid: 65c9f6563c561ee4e8905d1e6a32548b,
+      objectReference: {fileID: 8169364057099317167, guid: 3a201370bda74f0489149ffae236ea63,
         type: 3}
     - target: {fileID: 4283532953363553607, guid: 37e98970f8baf7647b735d9036006f0d,
         type: 3}
       propertyPath: shotPower
-      value: 300
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 4283532953363553607, guid: 37e98970f8baf7647b735d9036006f0d,
         type: 3}
