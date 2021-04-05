@@ -17,7 +17,7 @@ public class ArmourShopController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-            alertBox.SetActive(false);
+        alertBox.SetActive(false);
     }
 
     public void purchaseArmour(int armourNum)
@@ -85,7 +85,7 @@ public class ArmourShopController : MonoBehaviour
         }
         else if (doubloons < cost)
         {
-            alertBox.SetActive(true);
+            StartCoroutine(InsufficientFundAlert());
         }
         else
         {
@@ -93,5 +93,14 @@ public class ArmourShopController : MonoBehaviour
             //decrease gold by how much armour cost
             //add armour to their collection
         }
+    }
+
+    IEnumerator InsufficientFundAlert()
+    {
+        alertBox.SetActive(true);
+
+        yield return new WaitForSeconds(5f);
+
+        alertBox.SetActive(false);
     }
 }
