@@ -13,7 +13,7 @@ public class EnemyMeleeAI : MonoBehaviour
     [SerializeField]
     private float meleeAttackRange = 3.0f;
 
-    public LayerMask playerLayerMask;
+    public LayerMask playerLayerMask, allyLayerMask;
 
     // Attack
     private bool isAttacking = false;
@@ -28,6 +28,7 @@ public class EnemyMeleeAI : MonoBehaviour
     void Start()
     {
         m_animator = GetComponent<Animator>();
+        allyLayerMask = LayerMask.GetMask("Ally");
 
     }
 
@@ -51,7 +52,8 @@ public class EnemyMeleeAI : MonoBehaviour
         movement.HandleMovement(closestAlly.transform.position, meleeAttackRange, false);
         // attack if close enough
         bool isPlayerClose = Physics.CheckSphere(transform.position, meleeAttackRange, playerLayerMask);
-        if(isPlayerClose)
+        bool isAllyClose = Physics.CheckSphere(transform.position, meleeAttackRange, allyLayerMask);
+        if(isPlayerClose || isAllyClose)
         {
             Attack();
         }
@@ -73,13 +75,14 @@ public class EnemyMeleeAI : MonoBehaviour
             //enemyStats.TakeDamage(m_Stats.damage.GetValue());
             // TODO: do this with weapon collider
             // weaponCollider.gameObject.
-            Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, playerLayerMask);
+            Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, allyLayerMask);
 
 
             if (!isAttacking && hitEnemies.Length > 0)
             {
                 hitEnemies[0].GetComponent<CharacterStats>().TakeDamage(1);
                 isAttacking = true;
+                
             }
 
         }
