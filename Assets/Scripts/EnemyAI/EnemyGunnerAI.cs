@@ -9,6 +9,16 @@ public class EnemyGunnerAI : MonoBehaviour
 
     [SerializeField]
     private BattlefieldManager battle;
+
+    [SerializeField]
+    private EnemyShoot1 shoot;
+
+    [SerializeField]
+    private float shootDist = 20.0f;
+
+    [SerializeField]
+    private float shootTimer = 15.0f;
+    private float shootCD = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +40,18 @@ public class EnemyGunnerAI : MonoBehaviour
                 closestAlly = ally;
             }
         }
-        Vector3 vec = (closestAlly.transform.position - transform.position).normalized;
         // move towards them
-        movement.HandleMovement(closestAlly.transform.position, false, 15.0f);
+        movement.HandleMovement(closestAlly.transform.position, shootDist, false);
+
         // attack if close enough
+        if(Vector3.Distance(closestAlly.transform.position, transform.position) <= shootDist)
+        {
+            if(shootCD <= 0.0f)
+            {
+                shoot.Shoot();
+                shootCD += shootTimer;
+            }
+            shootCD -= Time.deltaTime;
+        }
     }
 }

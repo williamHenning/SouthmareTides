@@ -38,11 +38,12 @@ public class AIMovement : MonoBehaviour
     {
     }
 
-    public void HandleMovement(Vector3 target, bool jump, float attackRange)
+    public void HandleMovement(Vector3 target, float stopRange, bool jump)
     {
         transform.LookAt(target);
+        transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
         //transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
-        if(Vector3.Distance(target, transform.position) > attackRange)
+        if(Vector3.Distance(target, transform.position) > stopRange)
         {
             horizontalVel = transform.forward;
         }

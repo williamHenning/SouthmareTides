@@ -12,9 +12,11 @@ public class MeleeCombat : MonoBehaviour
     public Transform attackPoint;
 
     public LayerMask enemyLayers;
+    public LayerMask allyLayers;
     public float attackRange = 0.5f;
 
     private HashSet<Collider> enemiesHit = new HashSet<Collider>();
+    private HashSet<Collider> alliesHit = new HashSet<Collider>();
     private bool isAttacking = false;
 
     void Start()
@@ -37,14 +39,15 @@ public class MeleeCombat : MonoBehaviour
     }
     public void UpdateDamage()
     {
-        if (m_animator.GetCurrentAnimatorStateInfo(0).IsName("MeleeAttack"))
+        if (m_animator.GetCurrentAnimatorStateInfo(0).IsName("MeleeAttack") || m_animator.GetCurrentAnimatorStateInfo(0).IsName("Swing"))
         {
             isAttacking = true;
             //enemyStats.TakeDamage(m_Stats.damage.GetValue());
             // TODO: do this with weapon collider
             // weaponCollider.gameObject.
-            Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
 
+            Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
+            Collider[] hitAllies = Physics.OverlapSphere(attackPoint.position, attackRange, allyLayers);
 
             //Debug.Log(attackPoint.position);
 
@@ -57,6 +60,16 @@ public class MeleeCombat : MonoBehaviour
                     enemy.GetComponent<CharacterStats>().TakeDamage(1);
                 }
                 enemiesHit.Add(enemy);
+            }
+
+            foreach (Collider allies in hitAllies)
+            {
+                if (!enemiesHit.Contains(allies))
+                {
+                    Debug.Log("hit " + allies.name);
+                    allies.GetComponent<CharacterStats>().TakeDamage(1);
+                }
+                alliesHit.Add(allies);
             }
 
             //if(!isAttacking)
