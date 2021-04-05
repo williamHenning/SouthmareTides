@@ -10,7 +10,7 @@ public class AIMovement : MonoBehaviour
     [SerializeField]
     private float gravity = -15.81f;
     [SerializeField]
-    private float speed = 10.0f;
+    private float speed = 2.0f;
     [SerializeField]
     private float jumpForce = 3.0f;
 
@@ -21,6 +21,7 @@ public class AIMovement : MonoBehaviour
     [SerializeField]
     private LayerMask groundMask;
 
+    private float ShootRange = 15.0f;
 
     public Animator animator;
 
@@ -39,9 +40,19 @@ public class AIMovement : MonoBehaviour
     {
     }
 
-    public void HandleMovement(float x, float z, bool jump)
+    public void HandleMovement(Vector3 target, bool jump)
     {
-        horizontalVel = transform.forward * z + transform.right * x;
+        transform.LookAt(target);
+        //transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
+        if(Vector3.Distance(target, transform.position) > ShootRange)
+        {
+            horizontalVel = transform.forward;
+        }
+        else
+        {
+            horizontalVel = Vector3.zero;
+        }
+        
         verticalVel.y += gravity * Time.deltaTime;
 
         if (isGrounded && verticalVel.y < 0)
@@ -63,7 +74,7 @@ public class AIMovement : MonoBehaviour
 
         animator.SetBool("Grounded", isGrounded);
 
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Swing") && horizontalVel != Vector3.zero)
+        if (horizontalVel != Vector3.zero)
         {
             controller.Move(horizontalVel * speed * Time.deltaTime);
             animator.SetFloat("MoveSpeed", horizontalVel.magnitude);
