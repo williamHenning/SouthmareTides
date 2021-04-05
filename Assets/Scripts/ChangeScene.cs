@@ -9,6 +9,7 @@ public class ChangeScene : MonoBehaviour
     public void changeScene(string sceneName)
     {
         click.Play();
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
         
     }

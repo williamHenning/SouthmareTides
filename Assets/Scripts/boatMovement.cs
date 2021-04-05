@@ -35,6 +35,13 @@ public class boatMovement : MonoBehaviour
 
         transform.Rotate(new Vector3(0, rotation * Time.deltaTime * m_turnSpeed, 0));
         transform.position += transform.forward * m_moveSpeed;
+
+        //ensure that the boat does not turn on the x or x axis
+        transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
+
+        //ensure that the boat does not change elevation
+        transform.position = new Vector3(transform.position.x, 12.0f, transform.position.z);
+
     }
 
     public void OnCollisionEnter(Collision collision)

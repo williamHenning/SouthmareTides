@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465773, g: 0.49641192, b: 0.57481766, a: 1}
+  m_IndirectSpecularColor: {r: 0.446577, g: 0.49641132, b: 0.57481635, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 712348138}
         m_MethodName: changeScene
         m_Mode: 5
         m_Arguments:
@@ -305,6 +305,8 @@ MonoBehaviour:
           m_StringArgument: TitleScreen
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &141229034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +325,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -772,6 +776,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &657150295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,6 +796,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1156,42 +1164,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactablesPosition.Array.size
-      value: 3
+    - target: {fileID: 6138479696230692098, guid: 9efd562b88b35334199256af6385692c,
+        type: 3}
+      propertyPath: m_Name
+      value: 1st person player Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactables.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactPrompt
-      value: 
-      objectReference: {fileID: 966678148}
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactablesPosition.Array.data[0]
-      value: 
-      objectReference: {fileID: 1462355758}
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactablesPosition.Array.data[1]
-      value: 
-      objectReference: {fileID: 107678308}
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactablesPosition.Array.data[2]
-      value: 
-      objectReference: {fileID: 1756695956}
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactables.Array.data[0]
-      value: 
-      objectReference: {fileID: 6470623943276497196}
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactables.Array.data[1]
-      value: 
-      objectReference: {fileID: 6470623943276497198}
-    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
-      propertyPath: interactables.Array.data[2]
-      value: 
-      objectReference: {fileID: 1756695956}
     - target: {fileID: 2051370307428669002, guid: 9efd562b88b35334199256af6385692c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1221,11 +1198,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 134.68001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6138479696230692098, guid: 9efd562b88b35334199256af6385692c,
-        type: 3}
-      propertyPath: m_Name
-      value: 1st person player Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8151000580301731823, guid: 9efd562b88b35334199256af6385692c,
         type: 3}
@@ -1282,6 +1254,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactablesPosition.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactables.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactPrompt
+      value: 
+      objectReference: {fileID: 966678148}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactablesPosition.Array.data[0]
+      value: 
+      objectReference: {fileID: 1462355758}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactablesPosition.Array.data[1]
+      value: 
+      objectReference: {fileID: 107678308}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactablesPosition.Array.data[2]
+      value: 
+      objectReference: {fileID: 1756695956}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactables.Array.data[0]
+      value: 
+      objectReference: {fileID: 6470623943276497196}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactables.Array.data[1]
+      value: 
+      objectReference: {fileID: 6470623943276497198}
+    - target: {fileID: 1711394736, guid: 9efd562b88b35334199256af6385692c, type: 3}
+      propertyPath: interactables.Array.data[2]
+      value: 
+      objectReference: {fileID: 1756695956}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9efd562b88b35334199256af6385692c, type: 3}
 --- !u!64 &897895995
@@ -1586,6 +1594,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1658,6 +1668,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -1777,6 +1789,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 25
@@ -1854,6 +1868,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 40
@@ -2335,7 +2351,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 712348139}
         m_MethodName: unPause
         m_Mode: 1
         m_Arguments:
@@ -2346,6 +2362,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1571470642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2364,6 +2382,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2585,6 +2605,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -3101,6 +3123,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -3298,6 +3322,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
