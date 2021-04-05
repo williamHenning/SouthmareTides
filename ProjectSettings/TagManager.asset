@@ -18,6 +18,8 @@ TagManager:
   - BritishTreasureIsland
   - UpgradeShipIsland
   - Weapon
+  - Enemy
+  - Ally
   layers:
   - Default
   - TransparentFX

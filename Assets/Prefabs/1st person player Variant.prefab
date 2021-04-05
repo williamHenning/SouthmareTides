@@ -102,6 +102,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1544840924572020234, guid: ea9849f935afe504a9e1fd5917a04d6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1546838597479290144, guid: ea9849f935afe504a9e1fd5917a04d6a,
         type: 3}
       propertyPath: gun
@@ -116,6 +121,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 1st person player Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6647307370432492788, guid: ea9849f935afe504a9e1fd5917a04d6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8651858814906332697, guid: ea9849f935afe504a9e1fd5917a04d6a,
         type: 3}

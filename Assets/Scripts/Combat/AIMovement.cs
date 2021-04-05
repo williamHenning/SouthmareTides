@@ -21,8 +21,6 @@ public class AIMovement : MonoBehaviour
     [SerializeField]
     private LayerMask groundMask;
 
-    private float ShootRange = 15.0f;
-
     public Animator animator;
 
     bool isGrounded = false;
@@ -40,11 +38,12 @@ public class AIMovement : MonoBehaviour
     {
     }
 
-    public void HandleMovement(Vector3 target, bool jump)
+    public void HandleMovement(Vector3 target, float stopRange, bool jump)
     {
         transform.LookAt(target);
+        transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
         //transform.eulerAngles = new Vector3(0f, transform.eulerAngles.y, 0f);
-        if(Vector3.Distance(target, transform.position) > ShootRange)
+        if(Vector3.Distance(target, transform.position) > stopRange)
         {
             horizontalVel = transform.forward;
         }
