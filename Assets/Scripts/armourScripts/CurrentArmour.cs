@@ -23,6 +23,18 @@ public class CurrentArmour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //show what current armour level is
+        GameObject playerArmour = GameObject.Find("PlayerArmour");
+        if (playerArmour == null) { }
+
+        else
+        {
+            playerArmour playerArmourScript = playerArmour.GetComponent<playerArmour>();
+
+            //display level is + 1 compared to level it is saved as
+            notificationBox.GetComponentInChildren<Text>().text = "Your current armour is level " + (playerArmourScript.GetArmour().level + 1);
+        }
+
         //get the data of what armour the person has
         ArmourData data = SaveSystem.loadArmour();
         if (data != null)
@@ -35,16 +47,13 @@ public class CurrentArmour : MonoBehaviour
         {
             armourIcons[i].SetActive(false);
         }
-
+       
         //enable icons
         for (int i = 0; i < armourList.playerArmour.Count; i++)
         {
             int armourNum = armourList.playerArmour[i].level;
             armourIcons[armourNum].SetActive(true);
             numberArmourAvailable[armourNum] = numberArmourAvailable[armourNum]+1;
-
-            Debug.Log("The number of level "+ armourNum + " armour is "+ numberArmourAvailable[armourNum]);
-            Debug.Log("text in text box for the level above, before acounting for the above armour, is : "+armourIcons[armourNum].GetComponentInChildren<Text>().text);
             armourIcons[armourNum].GetComponentInChildren<Text>().text = "Take Armour (Number Owned: " + numberArmourAvailable[armourNum]+")";
         }
     }
@@ -60,13 +69,20 @@ public class CurrentArmour : MonoBehaviour
                 //set it as current armour
                 currentArmour = armourList.playerArmour[i];
                 currentArmourIndex = i;
-                Debug.Log("level "+ currentArmour.level);
-                Debug.Log("index "+currentArmourIndex);
 
-                //notify user that armour was taken
-                notificationBox.GetComponentInChildren<Text>().text = "Your current armour is level " + (currentArmour.level + 1);
-                break;
-                
+                //change it in the other script
+                GameObject playerArmour = GameObject.Find("PlayerArmour");
+                if (playerArmour == null) { }
+
+                else
+                {
+                    playerArmour playerArmourScript = playerArmour.GetComponent<playerArmour>();
+                    playerArmourScript.changeArmour(currentArmour, currentArmourIndex);
+
+                    //notify user that armour was taken
+                    notificationBox.GetComponentInChildren<Text>().text = "Your current armour is level " + (currentArmour.level + 1);
+                    break;
+                }
             }
         }
     }
