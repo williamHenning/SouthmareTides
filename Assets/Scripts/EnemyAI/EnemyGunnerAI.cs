@@ -32,7 +32,7 @@ public class EnemyGunnerAI : MonoBehaviour
         }
         Vector3 vec = (closestAlly.transform.position - transform.position).normalized;
         // move towards them
-        movement.HandleMovement(closestAlly.transform.position, false);
+        movement.HandleMovement(closestAlly.transform.position, false, 15.0f);
         // attack if close enough
     }
 }
