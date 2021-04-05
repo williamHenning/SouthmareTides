@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5194732d3380ab46bf48931261363fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingButtons: {fileID: 591399310}
+  button: {fileID: 591399310}
 --- !u!1 &348973687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,7 +1312,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cf6c0e7fbef9449c98a0cdb5ea0c4d9f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2098,7 +2098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5194732d3380ab46bf48931261363fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingButtons: {fileID: 620845318}
+  button: {fileID: 620845318}
 --- !u!1 &811821437
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,7 +3207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5194732d3380ab46bf48931261363fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingButtons: {fileID: 112781944}
+  button: {fileID: 112781944}
 --- !u!1 &1471241041 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100024, guid: b5fda4394c3dfdd47b883b44e1221c70,
@@ -3239,7 +3239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5194732d3380ab46bf48931261363fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingButtons: {fileID: 851646512}
+  button: {fileID: 851646512}
 --- !u!114 &1471241045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3334,7 +3334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5194732d3380ab46bf48931261363fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingButtons: {fileID: 2028268018}
+  button: {fileID: 2028268018}
 --- !u!114 &1485659059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3596,7 +3596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5194732d3380ab46bf48931261363fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingButtons: {fileID: 62649343}
+  button: {fileID: 0}
 --- !u!1001 &1672459571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3879,7 +3879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5194732d3380ab46bf48931261363fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingButtons: {fileID: 1114703952}
+  button: {fileID: 0}
 --- !u!1 &1876497363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,7 +3952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5194732d3380ab46bf48931261363fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingButtons: {fileID: 1807482271}
+  button: {fileID: 0}
 --- !u!1 &1989359251
 GameObject:
   m_ObjectHideFlags: 0
