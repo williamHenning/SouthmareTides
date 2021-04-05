@@ -613,7 +613,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4924815918470258948}
-  - component: {fileID: 4924815918470258949}
   m_Layer: 0
   m_Name: FocusPoint
   m_TagString: Untagged
@@ -638,21 +637,6 @@ Transform:
   m_Father: {fileID: 4924503691914257305}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4924815918470258949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4924815918470258947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d8722b91ca5b1c478479851826205ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 100
-  gun: {fileID: 0}
-  playerBody: {fileID: 4924503691914257305}
 --- !u!1 &4924815919697704536
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +678,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4924815919697704536}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
@@ -736,7 +720,7 @@ Behaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4924815919697704536}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &4924815919697704539
 Behaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +728,7 @@ Behaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4924815919697704536}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!81 &4924815919697704538
 AudioListener:
   m_ObjectHideFlags: 0
@@ -752,7 +736,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4924815919697704536}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &4925687810627595739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,6 +2104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 2507157228599249471}
+  battle: {fileID: 0}
 --- !u!114 &2507157228599249471
 MonoBehaviour:
   m_ObjectHideFlags: 0
