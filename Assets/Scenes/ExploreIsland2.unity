@@ -248,6 +248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Katana w_ Colliders
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 47377a9aa6b50294a865e21fe968af4d, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 47377a9aa6b50294a865e21fe968af4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0005
@@ -4300,7 +4304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1995968406
 MonoBehaviour:
   m_ObjectHideFlags: 0
