@@ -395,7 +395,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 20e17aac92cea844aaa708706067eb14, type: 2}
+  - {fileID: 2100000, guid: c9893909aae4a0644a72da08dc9b62ed, type: 2}
   - {fileID: 2100000, guid: c9893909aae4a0644a72da08dc9b62ed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1366,6 +1366,9 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 2048
+  allyLayers:
+    serializedVersion: 2
+    m_Bits: 0
   attackRange: 0.5
 --- !u!114 &3400067134217856490
 MonoBehaviour:
@@ -1402,6 +1405,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 0}
+  battle: {fileID: 0}
+  meleeAttackRange: 3
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
 --- !u!1 &4263891778100415902
 GameObject:
   m_ObjectHideFlags: 0

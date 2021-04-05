@@ -48,7 +48,7 @@ public class EnemyMeleeAI : MonoBehaviour
         }
         Vector3 vec = (closestAlly.transform.position - transform.position).normalized;
         // move towards them
-        movement.HandleMovement(closestAlly.transform.position, false, meleeAttackRange);
+        movement.HandleMovement(closestAlly.transform.position, meleeAttackRange, false);
         // attack if close enough
         bool isPlayerClose = Physics.CheckSphere(transform.position, meleeAttackRange, playerLayerMask);
         if(isPlayerClose)

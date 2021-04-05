@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3384962753567133385}
   - component: {fileID: 7074769599474034958}
   - component: {fileID: 1281576675629200462}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,9 +81,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3106380403096114712}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: GunAlly
-  m_TagString: Untagged
+  m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 8140424535345757998}
   - component: {fileID: 7864415377221208171}
   - component: {fileID: 8409550975773111155}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Player Health Bar Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 1915812520348711871}
   - component: {fileID: 1915812520347909023}
   - component: {fileID: 1915812520346810719}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: M1911 Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2197265723462603512}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: M1911 Magazine_Steel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 2722000616028507223}
   - component: {fileID: 2722000616031407223}
   - component: {fileID: 2722000616030408375}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 2722000616028507225}
   - component: {fileID: 2722000616031407225}
   - component: {fileID: 2722000616030408377}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 2722000616030408379}
   - component: {fileID: 5124866035503687690}
   - component: {fileID: 7108605952933124991}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: M1911 Handgun_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 2722000616028507229}
   - component: {fileID: 2722000616031407229}
   - component: {fileID: 2722000616030408381}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 2722000616028507231}
   - component: {fileID: 2722000616031407231}
   - component: {fileID: 2722000616030408383}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: CasingExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ GameObject:
   - component: {fileID: 7836871666880539408}
   - component: {fileID: 3532647663999533434}
   - component: {fileID: 7631296130579219688}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 2771828328331776049}
   - component: {fileID: 6576417280033422815}
   - component: {fileID: 6343686969142723154}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Health Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -955,7 +955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845979664852863921}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Magazine_Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074056472990934093}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074427785251463391}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076981721877995289}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 L Finger2Nub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1079,7 +1079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074053773487037651}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1110,7 +1110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073887511104296875}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 L Finger0Nub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1141,7 +1141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5078651657328817440}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: FocusPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1173,7 +1173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076852540145706819}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1204,7 +1204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073874168078890809}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1236,7 +1236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073994913296754209}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1267,7 +1267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5077140638175378795}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,7 +1298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073987763614941155}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 R Finger2Nub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1328,7 +1328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076764891478567223}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1359,7 +1359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076695908221890327}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L UpperArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074111616664995397}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1421,7 +1421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076799910237168017}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 R Finger1Nub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1451,7 +1451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076685682724078349}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1482,7 +1482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074247612351141751}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Finger0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1513,7 +1513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074323349176511907}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,7 +1549,7 @@ GameObject:
   - component: {fileID: 30553533259506715}
   - component: {fileID: 4644226214497924301}
   - component: {fileID: 2371634543110495771}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: MobileMaleFreeSimpleMovement1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1675,7 +1675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076688996042275515}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 L Finger1Nub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1706,7 +1706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076850174807221753}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 HeadNub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1736,7 +1736,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074290652071768769}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Finger1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1769,7 +1769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5074381829276442019}
   - component: {fileID: 5157603704807980471}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: C_man_1_FBX2013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1876,7 +1876,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073939850383220789}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1907,7 +1907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5077068661843425927}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1940,7 +1940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076842120667339569}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1973,7 +1973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073941638492342349}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2004,7 +2004,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074327296983832649}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Finger2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2035,7 +2035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073999209959663931}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,7 +2068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074114964474018595}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Finger1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2099,7 +2099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076967169517803661}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Finger2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2130,7 +2130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074083967029946293}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2161,7 +2161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076862992699116547}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,7 +2192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074121363404781059}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 R Finger0Nub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2222,7 +2222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076846403529822829}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig L Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2255,7 +2255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076809300443723559}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2286,7 +2286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074400010930093409}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Finger0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2317,7 +2317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074413811648609535}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 L Toe0Nub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2347,7 +2347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5073922824659570861}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Bip001 R Toe0Nub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2377,7 +2377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076684228699880423}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig R Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2408,7 +2408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5074250967730187221}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: basic_rig Footsteps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2438,7 +2438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6485816039616867079}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2468,7 +2468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6912552323636201448}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: M1911 Handgun_Silver (Shooting)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2501,7 +2501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6913188323365586962}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Barrel_Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2531,7 +2531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6913495923477854950}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Ejection_Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
