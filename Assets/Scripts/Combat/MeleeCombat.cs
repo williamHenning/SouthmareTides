@@ -37,7 +37,7 @@ public class MeleeCombat : MonoBehaviour
     }
     public void UpdateDamage()
     {
-        if (m_animator.GetCurrentAnimatorStateInfo(0).IsName("Swing"))
+        if (m_animator.GetCurrentAnimatorStateInfo(0).IsName("MeleeAttack"))
         {
             isAttacking = true;
             //enemyStats.TakeDamage(m_Stats.damage.GetValue());
