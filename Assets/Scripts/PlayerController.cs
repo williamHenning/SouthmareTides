@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("Grounded", isGrounded);
         
 
-        if(horizontalVel != Vector3.zero)
+        if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Swing") && horizontalVel != Vector3.zero)
         {
             controller.Move(horizontalVel * speed * Time.deltaTime);
             animator.SetFloat("MoveSpeed", horizontalVel.magnitude);
