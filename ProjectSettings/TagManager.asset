@@ -17,6 +17,7 @@ TagManager:
   - ArmourIsland
   - BritishTreasureIsland
   - UpgradeShipIsland
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -28,8 +29,8 @@ TagManager:
   - 
   - PostProcessing
   - Ground
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
