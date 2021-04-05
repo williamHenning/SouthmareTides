@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,15 +13,40 @@ public class ArmourShopController : MonoBehaviour
     //doubloons text box
     public Text doubloonsTextBox;
 
+    //List for the armour the player has
+    private armourStorageList armourList = new armourStorageList();
+
+    //How much doubloons someone has
+    public int numberOfDoubloons;
+
     // Start is called before the first frame update
     void Start()
     {
         alertBox.SetActive(false);
+
+        //get the data of what armour the person has
+        ArmourData data = SaveSystem.loadArmour();
+        if (data != null)
+        {
+            armourList.playerArmour = data.playerArmour;
+        }
     }
 
     public void purchaseArmour(int armourNum)
     {
-        int doubloons = 1000;
+        //get how much gold they have
+        if (PlayerPrefs.GetInt("doubloons") == 0)
+        {
+            PlayerPrefs.SetInt("doubloons", 0);
+            PlayerPrefs.Save();
+            numberOfDoubloons = (PlayerPrefs.GetInt("doubloons"));
+        }
+        else
+        {
+            numberOfDoubloons = PlayerPrefs.GetInt("doubloons");
+        }
+
+        //variable to represent cost of armour
         int cost;
 
         switch (armourNum)
@@ -81,17 +105,29 @@ public class ArmourShopController : MonoBehaviour
 
         if (cost < 0)
         {
-            //UnityEngine.Debug.Log("armourNum not valid");
+            Debug.Log("armourNum not valid");
         }
-        else if (doubloons < cost)
+        else if (numberOfDoubloons < cost)
         {
             StartCoroutine(InsufficientFundAlert());
         }
         else
         {
+            //remove alert box saying not enough gold
             alertBox.SetActive(false);
+
             //decrease gold by how much armour cost
+            numberOfDoubloons -= cost;
+            PlayerPrefs.SetInt("doubloons", numberOfDoubloons);
+            PlayerPrefs.Save();
+
             //add armour to their collection
+            Armour armour = new Armour(armourNum, 100);
+            armourList.playerArmour.Add(armour);
+            SaveSystem.saveArmour(armourList);
+
+            //Update text box for new amount of doubloons
+            doubloonsTextBox.text = "Doubloons: "+numberOfDoubloons;
         }
     }
 

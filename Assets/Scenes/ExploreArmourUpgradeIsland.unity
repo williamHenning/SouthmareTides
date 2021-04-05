@@ -4228,6 +4228,7 @@ MonoBehaviour:
   - {fileID: 178374051}
   - {fileID: 1909203758}
   doubloonsTextBox: {fileID: 1484585913}
+  numberOfDoubloons: 0
 --- !u!4 &934229594
 Transform:
   m_ObjectHideFlags: 0
@@ -5147,7 +5148,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
+          m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
