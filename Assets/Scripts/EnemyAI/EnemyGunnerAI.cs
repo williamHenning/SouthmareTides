@@ -14,6 +14,9 @@ public class EnemyGunnerAI : MonoBehaviour
     private EnemyShoot1 shoot;
 
     [SerializeField]
+    private GameObject gun;
+
+    [SerializeField]
     private float shootDist = 20.0f;
 
     [SerializeField]
@@ -43,8 +46,10 @@ public class EnemyGunnerAI : MonoBehaviour
         // move towards them
         movement.HandleMovement(closestAlly.transform.position, shootDist, false);
 
+        gun.transform.LookAt(closestAlly.transform.position + new Vector3(0f, 2f, 0f));
+
         // attack if close enough
-        if(Vector3.Distance(closestAlly.transform.position, transform.position) <= shootDist)
+        if (Vector3.Distance(closestAlly.transform.position, transform.position) <= shootDist)
         {
             if(shootCD <= 0.0f)
             {

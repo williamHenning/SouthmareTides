@@ -2295,7 +2295,6 @@ GameObject:
   - component: {fileID: 4975100230178409939}
   - component: {fileID: 6350273838339996261}
   - component: {fileID: 4778618377602539753}
-  - component: {fileID: 6350273838339996259}
   - component: {fileID: 3264618573292984599}
   - component: {fileID: 2507157228599249471}
   m_Layer: 11
@@ -2376,26 +2375,6 @@ MonoBehaviour:
   currentHealth: 10
   maxHealth: 10
   healthBar: {fileID: 6497505184553719414}
---- !u!114 &6350273838339996259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4926776212277156399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a372e5babda4d3c4b9adc651092f9965, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactablesPosition: []
-  interactables:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  interactPrompt: {fileID: 0}
-  minGold: 50
-  maxGold: 200
 --- !u!114 &3264618573292984599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2411,6 +2390,7 @@ MonoBehaviour:
   movement: {fileID: 2507157228599249471}
   battle: {fileID: 0}
   shoot: {fileID: 6954785197084495707}
+  gun: {fileID: 6763156102947632570}
   shootDist: 20
   shootTimer: 2
 --- !u!114 &2507157228599249471
