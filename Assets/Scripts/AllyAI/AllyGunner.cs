@@ -31,7 +31,7 @@ public class AllyGunner : MonoBehaviour
         GameObject closestEnemy = null;
         float minDist = float.MaxValue;
         // find the closest ally
-        foreach (GameObject enemy in battle.Allies)
+        foreach (GameObject enemy in battle.Enemies)
         {
             float dist = Vector3.Distance(transform.position, enemy.transform.position);
             if (dist < minDist)

@@ -2412,7 +2412,7 @@ MonoBehaviour:
   battle: {fileID: 0}
   shoot: {fileID: 6954785197084495707}
   shootDist: 20
-  shootTimer: 37.64
+  shootTimer: 2
 --- !u!114 &2507157228599249471
 MonoBehaviour:
   m_ObjectHideFlags: 0
