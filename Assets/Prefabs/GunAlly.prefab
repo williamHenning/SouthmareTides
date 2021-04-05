@@ -1627,6 +1627,7 @@ MonoBehaviour:
   movement: {fileID: 2371634543110495771}
   battle: {fileID: 0}
   shoot: {fileID: 7108605952933124991}
+  gun: {fileID: 6915564883214262686}
   shootDist: 20
   shootTimer: 2
 --- !u!114 &4644226214497924301
