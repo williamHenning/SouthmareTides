@@ -30,9 +30,10 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("enemy") || collision.gameObject.CompareTag("ally") || collision.gameObject.CompareTag("player"))
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Ally") || collision.gameObject.CompareTag("Player"))
         {
             // do damage
+            collision.gameObject.GetComponent<CharacterStats>().TakeDamage(1);
         }
         Destroy(this.gameObject);
 
