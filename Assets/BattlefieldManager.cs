@@ -200,7 +200,7 @@ public class BattlefieldManager : MonoBehaviour
     {
         for (int i = 0; i < Allies.Count; i++)
         {
-            if (Allies[i].GetInstanceID() == ally.GetInstanceID())
+            if (Allies[i] == ally)
             {
                 Allies.RemoveAt(i);
             }
@@ -213,7 +213,7 @@ public class BattlefieldManager : MonoBehaviour
     {
         for (int i = 0; i < Allies.Count; i++)
         {
-            if (Allies[i].GetInstanceID() == ally.GetInstanceID())
+            if (Allies[i] == ally)
             {
                 Allies.RemoveAt(i);
             }
@@ -224,13 +224,7 @@ public class BattlefieldManager : MonoBehaviour
 
     public void RemoveEnemyMelee(GameObject enemy)
     {
-        for (int i = 0; i < Enemies.Count; i++)
-        {
-            if (Enemies[i].GetInstanceID() == enemy.GetInstanceID())
-            {
-                Enemies.RemoveAt(i);
-            }
-        }
+        Enemies.Remove(enemy.transform.GetChild(0).gameObject);
         numCurrentEnemies -= 1;
         Destroy(enemy);
     }
@@ -239,7 +233,7 @@ public class BattlefieldManager : MonoBehaviour
     {
         for (int i = 0; i < Enemies.Count; i++)
         {
-            if (Enemies[i].GetInstanceID() == enemy.GetInstanceID())
+            if (Enemies[i] == enemy)
             {
                 Enemies.RemoveAt(i);
             }
