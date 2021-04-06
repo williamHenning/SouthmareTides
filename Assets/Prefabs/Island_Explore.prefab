@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2712688459670331063}
   - component: {fileID: 2712688459670331062}
   - component: {fileID: 5193873517982306084}
-  - component: {fileID: 1847637970723746957}
   m_Layer: 9
   m_Name: Sand
   m_TagString: Island_Explore
@@ -110,18 +109,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1847637970723746957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2712688459670331065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc8603d55e7dbbb47954132e74229120, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2712688459779361802
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +249,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 116482, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 177150, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 412076, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.7570801
@@ -317,14 +312,6 @@ PrefabInstance:
     - target: {fileID: 412076, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd, type: 3}
       propertyPath: m_LocalScale.z
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 177150, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 116482, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd, type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd, type: 3}

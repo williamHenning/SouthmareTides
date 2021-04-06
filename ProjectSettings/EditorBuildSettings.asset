@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Island_Storage.unity
     guid: 762e2c47116077940bec8948b483b2d3
   - enabled: 1
-    path: Assets/Scenes/Island_TradingPost.unity
+    path: Assets/Scenes/Island_RecruitmentPost.unity
     guid: ba87e1db3c234494284c1d4b348dcf78
   - enabled: 1
     path: Assets/Scenes/Island_Smith.unity
@@ -47,7 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExploreShipUpgradeIsland.unity
     guid: 7b4d85727e1b6e545886b7f052c26407
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ExploreBritishTreasureIsland.unity
     guid: 4c6a4a038d5f5d4458d98458d0c9391c
   m_configObjects: {}

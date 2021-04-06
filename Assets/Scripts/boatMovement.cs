@@ -97,7 +97,7 @@ public class boatMovement : MonoBehaviour
         //Check if hit british colony tressure place island
         else if (collision.collider.tag == "BritishTreasureIsland")
         {
-            SceneManager.LoadScene("ExploreBritishTreasureIsland");
+            SceneManager.LoadScene("ExploreIsland2");
         }
         else
         {
