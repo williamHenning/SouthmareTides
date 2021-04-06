@@ -30,9 +30,11 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("COLLISION");
         if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Ally") || collision.gameObject.CompareTag("Player"))
         {
             // do damage
+            Debug.Log("True");
             collision.gameObject.GetComponent<CharacterStats>().TakeDamage(1);
         }
         Destroy(this.gameObject);
