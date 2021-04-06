@@ -25,7 +25,7 @@ public class AllyGunner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        battle = GameObject.Find("Battlefield").GetComponent<BattlefieldManager>();
     }
 
     // Update is called once per frame

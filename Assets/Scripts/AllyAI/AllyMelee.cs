@@ -29,7 +29,7 @@ public class AllyMelee : MonoBehaviour
     {
         m_animator = GetComponent<Animator>();
         enemyLayerMask = LayerMask.GetMask("Enemy");
-
+        battle = GameObject.Find("Battlefield").GetComponent<BattlefieldManager>();
     }
 
     // Update is called once per frame

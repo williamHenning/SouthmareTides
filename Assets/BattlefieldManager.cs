@@ -43,10 +43,13 @@ public class BattlefieldManager : MonoBehaviour
             PlayerPrefs.SetInt("allies", 0);
             PlayerPrefs.Save();
             numAllies = PlayerPrefs.GetInt("allies");
+            numAllies = 23;
         }
         else
         {
             numAllies = PlayerPrefs.GetInt("allies");
+            numAllies = 23;
+
         }
 
         //Get the player pref for if their island is named
@@ -80,8 +83,6 @@ public class BattlefieldManager : MonoBehaviour
         float minZ = 333f; float maxZ = 356f;
         float y = 7f;
 
-        //TEST LIST UNTIL CAN ADD TO REAL ONE
-        List<GameObject> AlliesAI = new List<GameObject>();
 
         //Spawn melee allies
         for (int i = 0; i < numAllies; i++)
@@ -94,7 +95,7 @@ public class BattlefieldManager : MonoBehaviour
             Vector3 randomPos3d = new Vector3(xPos, y, zPos);
 
             //add ally to list of allies (currently not done)
-            AlliesAI.Add(Instantiate(enemyRange, randomPos3d, UnityEngine.Random.rotation));
+            Allies.Add(Instantiate(allyMelee, randomPos3d, UnityEngine.Random.rotation).transform.GetChild(0).gameObject);
         }
 
         //spawn range ally
@@ -108,7 +109,7 @@ public class BattlefieldManager : MonoBehaviour
             Vector3 randomPos3d = new Vector3(xPos, y, zPos);
 
             //add ally to list of allies (currently not done)
-            AlliesAI.Add(Instantiate(enemyRange, randomPos3d, UnityEngine.Random.rotation));
+            Allies.Add(Instantiate(allyRange, randomPos3d, UnityEngine.Random.rotation).transform.GetChild(0).gameObject);
         }
     }
 
@@ -134,8 +135,6 @@ public class BattlefieldManager : MonoBehaviour
 
     public void SpawnEnemyArea(int minX, int maxX, int minZ, int maxZ, int y, int numEnemies)
     {
-        //TEST LIST UNTIL CAN ADD TO REAL ONE
-        List<GameObject> AlliesAI = new List<GameObject>();
 
         for (int i = 0; i < numEnemies; i++)
         {
@@ -151,12 +150,12 @@ public class BattlefieldManager : MonoBehaviour
             if (enemyType == 0)
             {
                 //add ally to list of allies (currently not done)
-                AlliesAI.Add(Instantiate(enemyMelee, randomPos3d, UnityEngine.Random.rotation));
+                Enemies.Add(Instantiate(enemyMelee, randomPos3d, UnityEngine.Random.rotation).transform.GetChild(0).gameObject);
             }
             else if (enemyType == 1)
             {
                 //add ally to list of allies (currently not done)
-                AlliesAI.Add(Instantiate(enemyRange, randomPos3d, UnityEngine.Random.rotation));
+                Enemies.Add(Instantiate(enemyRange, randomPos3d, UnityEngine.Random.rotation).transform.GetChild(0).gameObject);
             }
         }
     }
@@ -207,11 +206,12 @@ public class BattlefieldManager : MonoBehaviour
             }
         }
         numAllies -= 1;
+        Destroy(ally);
     }
 
     public void RemoveAllyRange(GameObject ally)
     {
-        for (int i = 0; i < Enemies.Count; i++)
+        for (int i = 0; i < Allies.Count; i++)
         {
             if (Allies[i].GetInstanceID() == ally.GetInstanceID())
             {
@@ -219,6 +219,7 @@ public class BattlefieldManager : MonoBehaviour
             }
         }
         numAlliesRange -= 1;
+        Destroy(ally);
     }
 
     public void RemoveEnemyMelee(GameObject enemy)
@@ -231,6 +232,7 @@ public class BattlefieldManager : MonoBehaviour
             }
         }
         numCurrentEnemies -= 1;
+        Destroy(enemy);
     }
 
     public void RemoveEnemyRange(GameObject enemy)
@@ -242,8 +244,8 @@ public class BattlefieldManager : MonoBehaviour
                 Enemies.RemoveAt(i);
             }
         }
-        Destroy(enemy);
         numCurrentEnemies -= 1;
+        Destroy(enemy);
     }
 
     public void EndScene()

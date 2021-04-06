@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.446577, g: 0.49641132, b: 0.57481635, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465773, g: 0.49641192, b: 0.57481766, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2976,16 +2976,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48fecd392da8fd74894e1c35182b3c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allyMelee: {fileID: 0}
-  allyRange: {fileID: 0}
-  enemyMelee: {fileID: 0}
-  enemyRange: {fileID: 0}
-  Allies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Enemies:
-  - {fileID: 6939595097525920474}
+  allyMelee: {fileID: 7440874386970082459, guid: 298909983e020ad45873c9a221c0c21f,
+    type: 3}
+  allyRange: {fileID: 1095075723777103093, guid: 2402daf9cadfe324ebdb2e5de6a79f9f,
+    type: 3}
+  enemyMelee: {fileID: 8242961350914567244, guid: f75fa4c59ad85b54c89af6e437dd3d70,
+    type: 3}
+  enemyRange: {fileID: 941523540521304273, guid: cb446b717cfd5d1459a63c8a828357c6,
+    type: 3}
+  Allies: []
+  Enemies: []
   treasureChest: {fileID: 1853511820629026262, guid: e46932d6ad1289c49a190cf9ab6c7240,
     type: 3}
   numAllies: 5
@@ -4986,12 +4986,6 @@ PrefabInstance:
     - {fileID: 4924815918470258949, guid: cb446b717cfd5d1459a63c8a828357c6, type: 3}
     - {fileID: 6350273838339996259, guid: cb446b717cfd5d1459a63c8a828357c6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cb446b717cfd5d1459a63c8a828357c6, type: 3}
---- !u!1 &6939595097525920474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4926776212277156399, guid: cb446b717cfd5d1459a63c8a828357c6,
-    type: 3}
-  m_PrefabInstance: {fileID: 2598867418827520245}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &6996926313574659366 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 4975100230178409939, guid: cb446b717cfd5d1459a63c8a828357c6,
