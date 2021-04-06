@@ -1025,7 +1025,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1452686360457888, guid: 78a30b6e7fd674d4786d56a3bb7a40f4, type: 3}
       propertyPath: m_Name
-      value: Trading
+      value: RecruitmentPost
       objectReference: {fileID: 0}
     - target: {fileID: 4312960927464206, guid: 78a30b6e7fd674d4786d56a3bb7a40f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1834,7 +1834,7 @@ GameObject:
   - component: {fileID: 620845321}
   - component: {fileID: 620845320}
   m_Layer: 5
-  m_Name: TradingButton
+  m_Name: RecruitmentPostButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1908,7 +1908,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Island_TradingPost
+          m_StringArgument: Island_RecruitmentPost
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &620845321
@@ -3016,7 +3016,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Build a Trade Post (Costs 500 Doubloons)
+  m_Text: Build a Recruitment Post (Costs 500 Doubloons)
 --- !u!222 &1172705813
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3181,7 +3181,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Trade Post
+  m_Text: Enter Recruitment Post
 --- !u!222 &1262375444
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3716,7 +3716,7 @@ GameObject:
   - component: {fileID: 1807482274}
   - component: {fileID: 1807482273}
   m_Layer: 5
-  m_Name: CreateTradingButton
+  m_Name: CreateRecruitmentButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3914,7 +3914,7 @@ GameObject:
   - component: {fileID: 1876497366}
   - component: {fileID: 1876497367}
   m_Layer: 0
-  m_Name: dummyTradepost
+  m_Name: dummyRecruitmentPost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
