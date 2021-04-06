@@ -27,6 +27,12 @@ public class PlayerController : MonoBehaviour
     Vector3 verticalVel;
     Vector3 horizontalVel;
 
+    [SerializeField]
+    private GameObject gun;
+
+    [SerializeField]
+    private GameObject sword;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +44,20 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if(gun.active == false)
+            {
+                gun.SetActive(true);
+                sword.SetActive(false);
+            }
+
+            else
+            {
+                sword.SetActive(true);
+                gun.SetActive(false);
+            }
+        }
     }
 
     void HandleMovement()
