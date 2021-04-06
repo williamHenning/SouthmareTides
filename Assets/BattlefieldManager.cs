@@ -144,7 +144,7 @@ public class BattlefieldManager : MonoBehaviour
             //assign that position
             Vector3 randomPos3d = new Vector3(xPos, y, zPos);
 
-            float enemyType = UnityEngine.Random.Range(0, 1);
+            float enemyType = UnityEngine.Random.Range(0, 2);
 
             if (enemyType == 0)
             {
@@ -197,14 +197,14 @@ public class BattlefieldManager : MonoBehaviour
 
     public void RemoveAllyMelee(GameObject ally)
     {
-        Enemies.Remove(ally.transform.GetChild(0).gameObject);
+        Allies.Remove(ally.transform.GetChild(0).gameObject);
         numAllies -= 1;
         Destroy(ally);
     }
 
     public void RemoveAllyRange(GameObject ally)
     {
-        Enemies.Remove(ally.transform.GetChild(0).gameObject);
+        Allies.Remove(ally.transform.GetChild(0).gameObject);
         numAlliesRange -= 1;
         Destroy(ally);
     }

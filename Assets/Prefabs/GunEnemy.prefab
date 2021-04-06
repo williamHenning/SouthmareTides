@@ -2405,16 +2405,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df9153395914684287337ac6887e52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 0}
+  controller: {fileID: 6350273838339996261}
   gravity: -15.81
   speed: 10
   jumpForce: 3
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 6350273839644507939}
   groundDistnace: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
-  animator: {fileID: 0}
+    m_Bits: 512
+  animator: {fileID: 4975100230178409939}
 --- !u!1 &4926795266296121469
 GameObject:
   m_ObjectHideFlags: 0
