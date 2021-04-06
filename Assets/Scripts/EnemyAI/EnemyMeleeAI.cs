@@ -53,7 +53,7 @@ public class EnemyMeleeAI : MonoBehaviour
         // attack if close enough
         bool isPlayerClose = Physics.CheckSphere(transform.position, meleeAttackRange, playerLayerMask);
         bool isAllyClose = Physics.CheckSphere(transform.position, meleeAttackRange, allyLayerMask);
-        if(isPlayerClose || isAllyClose)
+        if (isPlayerClose || isAllyClose)
         {
             Attack();
         }

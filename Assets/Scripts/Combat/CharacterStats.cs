@@ -10,12 +10,17 @@ public class CharacterStats : MonoBehaviour
 
     public HealthBar healthBar = null;
 
+    private BattlefieldManager battlefieldManager;
+
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        battlefieldManager = GameObject.Find("Battlefield").GetComponent<BattlefieldManager>();
+        
     }
 
     // Update is called once per frame
@@ -32,6 +37,10 @@ public class CharacterStats : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         Debug.Log("Taking damage");
+        if(currentHealth <= 0)
+        {
+           
+        }
     }
 
 
