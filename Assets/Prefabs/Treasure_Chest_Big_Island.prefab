@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4644540661112838320}
   - component: {fileID: 1853511820629026257}
   m_Layer: 0
-  m_Name: Ship_Treasure_Chest_Big_Island
+  m_Name: Treasure_Chest_Big_Island
   m_TagString: Treasure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

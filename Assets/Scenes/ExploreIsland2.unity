@@ -2986,8 +2986,7 @@ MonoBehaviour:
     type: 3}
   Allies: []
   Enemies: []
-  treasureChest: {fileID: 1853511820629026262, guid: e46932d6ad1289c49a190cf9ab6c7240,
-    type: 3}
+  treasureChest: {fileID: 110828, guid: cae8e749c8d3eb44da3bdd1e6c9f42fd, type: 3}
   numAllies: 5
   numAlliesRange: 0
   numCurrentEnemies: 0
