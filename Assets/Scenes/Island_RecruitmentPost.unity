@@ -192,7 +192,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2038216075}
-        m_MethodName: purchaseAlly
+        m_MethodName: purchaseMeleeAlly
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1348,7 +1348,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2038216075}
-        m_MethodName: purchaseAlly
+        m_MethodName: purchaseRangeAlly
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1805,13 +1805,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alertBox: {fileID: 909517159}
   doubloonsTextBox: {fileID: 2023410521}
-  alliesMeleeTextBox: {fileID: 0}
-  alliesRangeTextBox: {fileID: 0}
+  alliesMeleeTextBox: {fileID: 1766033359}
+  alliesRangeTextBox: {fileID: 444608544}
   numberOfDoubloons: 0
   numAlliesMelee: 0
   numAlliesRange: 0
   cost: 200
-  costRange: 0
+  costRange: 300
 --- !u!1 &2116820157
 GameObject:
   m_ObjectHideFlags: 0

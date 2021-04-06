@@ -49,6 +49,18 @@ public class HireRecruit : MonoBehaviour
             numAlliesMelee = PlayerPrefs.GetInt("allies");
         }
 
+        //get how much gold they have
+        if (PlayerPrefs.GetInt("alliesRange") == 0)
+        {
+            PlayerPrefs.SetInt("alliesRange", 0);
+            PlayerPrefs.Save();
+            numAlliesRange = (PlayerPrefs.GetInt("alliesRange"));
+        }
+        else
+        {
+            numAlliesRange = PlayerPrefs.GetInt("alliesRange");
+        }
+
         // Update text box for new number of allies
         alliesMeleeTextBox.text = "You have " + numAlliesMelee + " melee crewmates.";
 
