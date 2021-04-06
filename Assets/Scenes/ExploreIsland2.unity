@@ -3935,7 +3935,7 @@ GameObject:
   - component: {fileID: 2021344175}
   m_Layer: 0
   m_Name: Cube (10)
-  m_TagString: ReturnHome
+  m_TagString: ReturnBigIsland
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

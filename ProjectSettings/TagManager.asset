@@ -20,6 +20,7 @@ TagManager:
   - Weapon
   - Enemy
   - Ally
+  - ReturnBigIsland
   layers:
   - Default
   - TransparentFX
