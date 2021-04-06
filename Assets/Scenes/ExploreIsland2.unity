@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465773, g: 0.49641192, b: 0.57481766, a: 1}
+  m_IndirectSpecularColor: {r: 0.446577, g: 0.49641132, b: 0.57481635, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4270,12 +4270,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48fecd392da8fd74894e1c35182b3c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allyMelee: {fileID: 0}
+  allyRange: {fileID: 0}
+  enemyMelee: {fileID: 0}
+  enemyRange: {fileID: 0}
   Allies:
   - {fileID: 544335431}
   Enemies:
   - {fileID: 6939595097525920474}
-  ally: {fileID: 0}
-  enemy: {fileID: 0}
+  treasureChest: {fileID: 1853511820629026262, guid: e46932d6ad1289c49a190cf9ab6c7240,
+    type: 3}
+  numAllies: 5
+  numAlliesRange: 0
+  numCurrentEnemies: 0
 --- !u!4 &1453159784
 Transform:
   m_ObjectHideFlags: 0

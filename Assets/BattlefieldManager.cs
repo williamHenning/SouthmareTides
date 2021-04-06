@@ -197,18 +197,52 @@ public class BattlefieldManager : MonoBehaviour
         }
     }
 
-    public void RemoveAllyMelee()
+    public void RemoveAllyMelee(GameObject ally)
     {
+        for (int i = 0; i < Allies.Count; i++)
+        {
+            if (Allies[i].GetInstanceID() == ally.GetInstanceID())
+            {
+                Allies.RemoveAt(i);
+            }
+        }
         numAllies -= 1;
     }
 
-    public void RemoveAllyRange()
+    public void RemoveAllyRange(GameObject ally)
     {
+        for (int i = 0; i < Enemies.Count; i++)
+        {
+            if (Allies[i].GetInstanceID() == ally.GetInstanceID())
+            {
+                Allies.RemoveAt(i);
+            }
+        }
         numAlliesRange -= 1;
     }
 
-    public void RemoveEnemy()
+    public void RemoveEnemyMelee(GameObject enemy)
     {
+        for (int i = 0; i < Enemies.Count; i++)
+        {
+            if (Enemies[i].GetInstanceID() == enemy.GetInstanceID())
+            {
+                Enemies.RemoveAt(i);
+            }
+        }
+        numCurrentEnemies -= 1;
+    }
+
+    public void RemoveEnemyRange(GameObject enemy)
+    {
+        for (int i = 0; i < Enemies.Count; i++)
+        {
+            if (Enemies[i].GetInstanceID() == enemy.GetInstanceID())
+            {
+                Enemies.RemoveAt(i);
+            }
+        }
+        Destroy(enemy);
         numCurrentEnemies -= 1;
     }
 
