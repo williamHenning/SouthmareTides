@@ -58,7 +58,7 @@ public class AllyMelee : MonoBehaviour
             Attack();
         }
         UpdateDamage();
-
+        
     }
 
     public void Attack()
