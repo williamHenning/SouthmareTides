@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             if(gun.active == false)
             {

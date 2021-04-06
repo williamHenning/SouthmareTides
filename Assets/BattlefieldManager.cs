@@ -43,12 +43,10 @@ public class BattlefieldManager : MonoBehaviour
             PlayerPrefs.SetInt("allies", 0);
             PlayerPrefs.Save();
             numAllies = PlayerPrefs.GetInt("allies");
-            numAllies = 23;
         }
         else
         {
             numAllies = PlayerPrefs.GetInt("allies");
-            numAllies = 23;
 
         }
 
@@ -245,10 +243,9 @@ public class BattlefieldManager : MonoBehaviour
     public void EndScene()
     {
         //update number of allies (melee and range)
-
-        //update number of gold earned (numEnemies defeated * 100)
-
-        //update armour durability of equipped armour
+        PlayerPrefs.SetInt("alliesRange", numAlliesRange);
+        PlayerPrefs.SetInt("allies", numAllies);
+        PlayerPrefs.Save();
 
     }
 
