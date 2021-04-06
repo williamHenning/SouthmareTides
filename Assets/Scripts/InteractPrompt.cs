@@ -64,6 +64,13 @@ public class InteractPrompt : MonoBehaviour
                                 interactPrompt.SetActive(true);
                                 break;
                             }
+                            else if (interactables[i].transform.tag == "ReturnBigIsland")
+                            {
+                                interact = "returnBigIsland";
+                                interactPrompt.GetComponentInChildren<Text>().text = "[E] Leave";
+                                interactPrompt.SetActive(true);
+                                break;
+                            }
                         }
                         //By default make it so that there is nothing to interact with
                         interact = "";
@@ -99,6 +106,12 @@ public class InteractPrompt : MonoBehaviour
                             Debug.Log("return to ship");
                             SceneManager.LoadScene("OpenExplore");
                         }
+
+                        else if (interact == "returnBigIsland")
+                        {
+                            GameObject.Find("Battlefield").GetComponent<BattlefieldManager>().EndScene();
+                        }
+
                         interactPrompt.SetActive(false);
                         interact = "";
                     }

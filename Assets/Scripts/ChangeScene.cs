@@ -11,6 +11,5 @@ public class ChangeScene : MonoBehaviour
         click.Play();
         Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
-        
     }
 }

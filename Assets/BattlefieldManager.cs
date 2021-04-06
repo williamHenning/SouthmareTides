@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattlefieldManager : MonoBehaviour
 {
@@ -247,6 +248,7 @@ public class BattlefieldManager : MonoBehaviour
         PlayerPrefs.SetInt("allies", numAllies);
         PlayerPrefs.Save();
 
+        SceneManager.LoadScene("OpenExplore");
     }
 
 }
