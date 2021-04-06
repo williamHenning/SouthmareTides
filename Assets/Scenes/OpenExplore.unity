@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 170826203}
   m_Layer: 0
   m_Name: Sand
-  m_TagString: HomeIsland
+  m_TagString: BritishTreasureIsland
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2901,7 +2901,7 @@ GameObject:
   - component: {fileID: 1294837869}
   m_Layer: 0
   m_Name: Dock
-  m_TagString: HomeIsland
+  m_TagString: BritishTreasureIsland
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4252,7 +4252,7 @@ GameObject:
   - component: {fileID: 1782093350}
   m_Layer: 0
   m_Name: Grass
-  m_TagString: Untagged
+  m_TagString: BritishTreasureIsland
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

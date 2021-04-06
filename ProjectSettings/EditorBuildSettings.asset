@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Island_Smith.unity
     guid: ab216d5a069b29d4c9c75bd14542fd34
   - enabled: 1
+    path: Assets/Scenes/ExploreIsland2.unity
+    guid: 84715d19dbb71d24eb562de8a46a7ec8
+  - enabled: 1
     path: Assets/Scenes/ExploreArmourUpgradeIsland.unity
     guid: f33d0b1293bd03b43b900659662a91fc
   - enabled: 1
