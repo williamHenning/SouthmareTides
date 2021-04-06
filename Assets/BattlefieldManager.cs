@@ -197,26 +197,14 @@ public class BattlefieldManager : MonoBehaviour
 
     public void RemoveAllyMelee(GameObject ally)
     {
-        for (int i = 0; i < Allies.Count; i++)
-        {
-            if (Allies[i] == ally)
-            {
-                Allies.RemoveAt(i);
-            }
-        }
+        Enemies.Remove(ally.transform.GetChild(0).gameObject);
         numAllies -= 1;
         Destroy(ally);
     }
 
     public void RemoveAllyRange(GameObject ally)
     {
-        for (int i = 0; i < Allies.Count; i++)
-        {
-            if (Allies[i] == ally)
-            {
-                Allies.RemoveAt(i);
-            }
-        }
+        Enemies.Remove(ally.transform.GetChild(0).gameObject);
         numAlliesRange -= 1;
         Destroy(ally);
     }
@@ -230,13 +218,7 @@ public class BattlefieldManager : MonoBehaviour
 
     public void RemoveEnemyRange(GameObject enemy)
     {
-        for (int i = 0; i < Enemies.Count; i++)
-        {
-            if (Enemies[i] == enemy)
-            {
-                Enemies.RemoveAt(i);
-            }
-        }
+        Enemies.Remove(enemy.transform.GetChild(0).gameObject);
         numCurrentEnemies -= 1;
         Destroy(enemy);
     }
